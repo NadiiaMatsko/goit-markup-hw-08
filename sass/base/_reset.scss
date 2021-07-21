@@ -1,0 +1,41 @@
+body {
+    background-color: $common-bg-color;
+    color: $main-text-color;
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+padding: 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+
+.section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+}
+
+div, section, p, input, body, button {
+    box-sizing: border-box;
+}

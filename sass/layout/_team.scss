@@ -1,0 +1,71 @@
+.team {
+    background: #F5F4FA;
+}
+
+.team__section_title {
+    margin-bottom: 50px;
+}
+
+
+.team__item_description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+.team__list {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+    
+.team__list p {
+    text-align: center;
+    color: $main-text-color;
+}
+    
+.team__item_name {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+    
+.team__item_profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+    
+    
+.team__item {
+    border-radius: 3px;
+    background: $common-bg-color;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+    margin-bottom: 30px;
+    @media screen and (min-width:480x) {
+        width: 450px;
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    }
+}
+    
+.team__item + .team__item {
+    @media screen and (min-width:1200px) {
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    
+    <!-- ВЕРХНИЙ КОЛОНТИТУЛ -->
+    <header class="head">
+        <div class="container header">
+            <nav class="header__nav nav">
+                <a href="index.html" class="nav__logo logo"> <span class="logo__highlighted-text">Web</span>Studio</a>
+                <ul class="nav__list list">
+                    <li class="nav__list-item"> 
+                        <a href="index.html" class="nav__link">Студия</a>
+                    </li>
+                    <li class="nav__list-item"> 
+                        <a href="portfolio.html" class="nav__link nav__link_current">Портфолио</a>
+                    </li>
+                    <li class="nav__list-item"> 
+                        <a href="Контакты" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li>
+                    <a href="mailto:info@devstudio.com" class="contacts__item"><svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380961111111" class="contacts__item"><svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button class="mobile-menu__button" data-menu-open type="button">
+                <svg class=mobile-menu__icon width="24" height="16">
+                    <use href="./images/sprite.svg#menu"></use>
+                </svg>
+            </button>
+
+
+            <div class="mobile-menu is-hidden" data-menu>
+                <button class="mobile-menu__btn-close" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="19" height="19">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                    </button>
+                <div class="mobile-container" >
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-list__item">
+                        <a href="./index.html" class="mob-menu-list__link">Студия</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                        <a href="./portfolio.html" class="mob-menu-list__link mob-menu-list__link_current">Портфолио</a>
+                        </li>
+                        <li class="mob-menu-list__item">
+                        <a href="" class="mob-menu-list__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mob-menu__bottom">
+                    <ul class="mob-menu_contacts list">
+                        <li class="mob-menu-contacts__item">
+                        <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_big">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-contacts__item">
+                        <a href="" class="mob-menu-contacts__link mob-menu-contacts__link_size_small">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu-social list">
+                        <li class="mob-menu-social__item">
+                        <a href="" class="mob-menu-social__link">Instagram</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                        <a href="" class="mob-menu-social__link">Twitter</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link">Facebook</a>
+                        </li>
+                        <li class="mob-menu-social__item">
+                            <a href="" class="mob-menu-social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Главная информация -->
+    <main>
+
+        <!-- Портфолио проэктов -->
+        <section class="filter__section section"> 
+            <div class="container">
+                <h1 class="hidden-title">Портфолио</h1> <!--СКРЫТЫЙ ЗАГОЛОВОК--> 
+
+            <!-- Кнопки -->
+                <ul class="filter list">
+                    <li><button type="button" class="filter__button button">Все</button></li>
+                    <li><button type="button" class="filter__button button">Веб-сайты</button></li>
+                    <li><button type="button" class="filter__button button">Приложения</button></li>
+                    <li><button type="button" class="filter__button button">Дизайн</button></li>
+                    <li><button type="button" class="filter__button button">Маркетинг</button></li>
+                </ul>
+
+            <!-- ПРОЭКТЫ---------->
+                <h2 class="hidden-title">Проэкты</h2> <!--СКРЫТЫЙ ЗАГОЛОВОК-->  
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-1_2x-min.jpg 2x, ./images/desk/pr-1-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-1_tab_2x-min.jpg 2x, ./images/tab/pr-1_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-1_mob_2x-min.jpg 2x, ./images/mob/pr-1_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-1_mob_2x-min.jpg" alt="Фото веб-сайта Технокряк" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Технокряк</h3>
+                            <p class="projects__item_type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-2_2x-min.jpg 2x, ./images/desk/pr-2-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-2_tab_2x-min.jpg 2x, ./images/tab/pr-2_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-2_mob_2x-min.jpg 2x, ./images/mob/pr-2_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-2_mob_2x-min.jpg" alt="фото постера с баскетболистом" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Постер New Orlean vs Golden Star</h3>
+                            <p class="projects__item_type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-3_2x-min.jpg 2x, ./images/desk/pr-3-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-3_tab_2x-min.jpg 2x, ./images/tab/pr-3_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-3_mob_2x-min.jpg 2x, ./images/mob/pr-3_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-3_mob_2x-min.jpg" alt="лого ресторана Seafood" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Ресторан Seafood</h3>
+                            <p class="projects__item_type">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-4_2x-min.jpg 2x, ./images/desk/pr-4-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-4_tab_2x-min.jpg 2x, ./images/tab/pr-4_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-4_mob_2x-min.jpg 2x, ./images/mob/pr-4_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-4_mob_2x-min.jpg" alt="Наушники" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Проект Prime</h3>
+                            <p class="projects__item_type">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-5_2x-min.jpg 2x, ./images/desk/pr-5-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-5_tab_2x-min.jpg 2x, ./images/tab/pr-5_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-5_mob_2x-min.jpg 2x, ./images/mob/pr-5_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-5_mob_2x-min.jpg" alt="Две коробки" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Проект Boxes</h3>
+                            <p class="projects__item_type">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-6_2x-min.jpg 2x, ./images/desk/pr-6-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-6_tab_2x-min.jpg 2x, ./images/tab/pr-6_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-6_mob_2x-min.jpg 2x, ./images/mob/pr-6_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-6_mob_2x-min.jpg" alt="Компьютер" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Inspiration has no Borders</h3>
+                            <p class="projects__item_type">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-7_2x-min.jpg 2x, ./images/desk/pr-7-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-7_tab_2x-min.jpg 2x, ./images/tab/pr-7_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-7_mob_2x-min.jpg 2x, ./images/mob/pr-7_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-7_mob_2x-min.jpg" alt="Журнал с лого" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Издание Limited Edition</h3>
+                            <p class="projects__item_type">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-8_2x-min.jpg 2x, ./images/desk/pr-8-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-8_tab_2x-min.jpg 2x, ./images/tab/pr-8_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-8_mob_2x-min.jpg 2x, ./images/mob/pr-8_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-8_mob_2x-min.jpg" alt="Бирка" width="100%"/>
+                                </picture>
+                        <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Проект LAB</h3>
+                            <p class="projects__item_type">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="projects__item">
+                        <div class="projects__item_wrapper">
+                            <picture>
+                                <source srcset="./images/desk/pr-9_2x-min.jpg 2x, ./images/desk/pr-9-min.jpg 1x" media="(min-width: 1200px)">
+                                <source srcset="./images/tab/pr-9_tab_2x-min.jpg 2x, ./images/tab/pr-9_tab-min.jpg 1x" media="(min-width: 768px)">
+                                <source srcset="./images/mob/pr-9_mob_2x-min.jpg 2x, ./images/mob/pr-9_mob-min.jpg 1x" media="(min-width: 480px)">
+                                <img src="./images/mob/pr-9_mob_2x-min.jpg" alt="Ноутбук" width="100%"/>
+                            </picture>
+                            <p class="projects__item_overlay"></p>
+                        </div>
+                        <div class="projects__item_info">
+                            <h3 class="projects__item_name">Growing Business</h3>
+                            <p class="projects__item_type">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    
+    <!-- Нижний колонтитул -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts">
+                <a href="./index.html" class="footer__logo logo"> <span class="logo__highlighted-text">Web</span>Studio</a>
+                    <ul class="list">
+                        <li>
+                            <p class="footer__contacts_adress">г. Киев, пр-т Леси Украинки, 26</p>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="footer__contacts footer__contacts_email">info@example.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="footer__contacts">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="social__list">
+                <h2 class="title title_white">Присоединяйтесь</h2>
+                <ul class="list footer__social_list">
+                    <li class="social__icon_list_item">
+                        <a class="social__link" href="">
+                        <svg class="social__icon social__icon_white" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social__icon_list_item">
+                        <a class="social__link" href="">
+                        <svg class="social__icon social__icon_white" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social__icon_list_item">
+                        <a class="social__link" href="">
+                        <svg class="social__icon social__icon_white" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="social__icon_list_item">
+                        <a class="social__link" href="">
+                        <svg class="social__icon social__icon_white" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__subscription-form">
+                <h2 class="title title_white">Подпишитесь на рассылку</h2>
+                <form class="subscription-form" name="signup_form" autocomplete="on" novalidate>
+                    <label class="subscription-form__label">
+                    <input class="subscription-form__input" type="email" name="subscription-email" placeholder="E-mail"/>
+                    </label>
+                    <button class="subscription-form__button button" type="submit">Подписаться
+                        <svg class="subscription-form__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script> 
+</body>
+</html>
+
+
+
